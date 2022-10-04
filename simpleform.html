@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>simpleform</title>
 </head>
+<style>
+    .wufoo {
+        font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+    }
+</style>
 <body>
-
+<form method="get" action="simpleform.html" class="wufoo">
+    <h2>Đơn đặt hàng</h2>
+    <p>Bạn muốn mua gì?</p>
+    <select>
+        <option value=" ">Bút bi</option>
+        <option>Bút chì</option>
+        <option>Thước kẻ</option>
+        <option>Tẩy</option>
+        <option>Vở</option>
+    </select>
+        <p>Số lượng bạn đặt</p>
+    <input type="radio" name="rd"/> 1 - 5k <br>
+    <input type="radio" name="rd"/> 2 - 10k <br>
+    <input type="radio" name="rd"/> 3 - 15k <br>
+        <p>Họ tên<span style="color : red">*</span></p>
+    <input type="text" name="Tên" placeholder="Tên" size="15"/>
+    <input type="text" name="Họ" placeholder="Họ" size="15"/>
+        <p>Gmail</p>
+    <input type="text" name="Gmail" placeholder="@gmail.com" size="35"/>
+        <p>Số điện thoại</p>
+    <input type="text" name="+84" placeholder="+84" size="5"/>
+    <input type="text" size="20">
+        <p><input type="button" name="btsubmit" value="Thanh toán"></p>
+</form>
 </body>
 </html>
